@@ -19,7 +19,7 @@
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-      <label for="navi-toggle" class="navigation__button">
+      <label for="navi-toggle" class="navigation__button" id="stay-in-place">
         <span class="navigation__icon">&nbsp;</span>
       </label>
 
@@ -38,7 +38,7 @@
             >
           </li>
           <li class="navigation__item">
-            <a href="#popular-tours" class="navigation__link"
+            <a href="#tours" class="navigation__link"
               ><span>03</span>popular tours</a
             >
           </li>
@@ -66,14 +66,14 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#discover" class="btn btn--white btn--animated"
+        <a href="#tours" class="btn btn--white btn--animated"
           >Discover our tours</a
         >
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -126,7 +126,7 @@
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="benefits">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -182,7 +182,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -284,11 +284,11 @@
         </div>
 
         <div class="u-center-text u-margin-top-huge">
-          <a href="#discover" class="btn btn--green">discover all tours</a>
+          <a href="#tours-all" class="btn btn--green">discover all tours</a>
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories" id="stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4" />
@@ -355,7 +355,7 @@
         </div>
       </section>
 
-      <section class="section-book">
+      <section class="section-book" id="booking">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -467,6 +467,39 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="book-now">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#stay-in-place" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            cursus interdum commodo. Donec ullamcorper iaculis felis, non
+            sollicitudin massa iaculis eget. Maecenas pellentesque vitae nisl
+            nec luctus. Praesent ut justo orci. Nulla nec nunc nibh. Nulla id
+            sapien a lacus laoreet bibendum. Sed sed magna dui. Aenean id tellus
+            metus. Mauris non metus porta ante tempor vestibulum eu ac orci. Sed
+            suscipit vulputate mauris, eu faucibus dolor pellentesque a. Quisque
+            sagittis eget justo vel scelerisque. Quisque id urna dapibus,
+            egestas nunc blandit, laoreet dui. Nunc rutrum lorem ac lobortis
+            gravida. Aenean vitae arcu pretium, euismod tortor sit amet, posuere
+            velit.
+          </p>
+          <a href="#book-now" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
 
     <!-- <section class="grid-test">
       <div class="row">
